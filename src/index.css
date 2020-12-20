@@ -1,0 +1,215 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #ffe5b9;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #333;
+}
+.clear{
+  clear: both;
+}
+hr{
+  border: 0;
+  margin: 10px;
+  border-bottom: 1px solid #eee;
+}
+.app .container{
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+.app header{
+  padding: 15px 5px;
+  margin: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.app header h1{
+  font-weight: normal;
+  float: left;
+  margin-top: 25px;
+  font-size: 35px;
+}
+.app header h1 span{
+  color: #707385;
+  font-weight: bold;
+}
+.app header .cart{
+  float: right;
+  width: 200px;
+  text-align: right;
+  margin-top: 10px;
+}
+@media (max-width: 500px){  
+  .app header h1{
+    float: none;
+  }
+  .app header .cart{
+    float: none;
+    text-align: left;    
+    margin-top: 0;
+  }
+}
+.app header nav a, 
+.app header .cart a{
+  display: inline-block;
+  background: #727685;
+  margin-right: 5px;
+  padding: 3px 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+.app header nav a:hover, 
+.app header .cart a:hover{
+  background: #424652;
+}
+.app header .cart a{
+  margin-right: 0;
+  margin-top: 2px;
+}
+.app .container > section{
+  padding: 10px 20px;
+}
+.app img{
+  max-width: 100%;
+}
+.app section h2{
+  font-size: 18px;
+  margin-top: 0;
+}
+.app section .items .item{
+  width: 33.333%;
+  height: 350px;
+  float: left;
+  text-align: center;
+}
+@media only screen and (max-width: 700px){
+  .app section .items .item{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 450px){
+  .app section .items .item{
+    width: 100%;
+  }
+}
+.app section .subhead{
+  margin:0;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.app .items .item img{
+  max-width: 100%;
+  width: auto;
+  height: 170px;
+  margin: 10px auto;
+}
+.app .items .item h3{
+  margin: 10px 0 15px 0;
+}
+.app .items .item h4{
+  font-size: 25px;
+  margin: 10px 0 15px 0;
+}
+.app input.addToCart{
+  background: #c03838;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background 0.4s;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+}
+.app input.addToCart:focus{
+  border: 0;
+  outline: 0;
+}
+.app input.addToCart:hover{
+  background: #a12d2d;
+}
+.app input.addToCart:disabled{
+  background: #ccc;
+  color: #444;
+  cursor: not-allowed;
+}
+.app .checkout .item{
+  margin: 20px 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  position: relative;
+}
+.app .checkout .item img{
+  max-width: 100px;
+  float: left;
+}
+.app .checkout .item h3{
+  margin-left: 20px;
+  margin-top: 25px;
+  display: inline-block;
+}
+@media (max-width: 400px){
+  .app .checkout .item img{
+    display: none;
+  }
+  .app .checkout .item h3{
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+.app .checkout .item h4{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+.app .checkout .no-items{
+  font-size: 16px;
+  margin: 10px 0;
+}
+.app .checkout .check-foot{
+  text-align: right;
+}
+.app .checkout .total{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.app .checkout .checkoutBtn{
+  margin-top: 5px;
+  display: inline-block;
+  color: #fff;
+  background: rgb(168, 73, 73);
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+.app .checkout .checkoutBtn:hover{
+  background: rgb(136, 53, 53);
+}
+.app footer{
+  margin: 10px;
+  padding: 20px 10px 20px 10px;
+  font-size: 13px;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #ccc;
+}
